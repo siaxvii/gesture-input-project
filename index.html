@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gesture-Based Input</title>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+    <style>
+        body {
+            background-image: url('abstract-white-monochrome-background-vector-32028465.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: 'Trebuchet MS';
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        #webcam-container {
+            position: relative;
+            width: 640px;
+            height: 480px;
+            border: 3px solid black;
+            margin-top: 20px;
+        }
+        video {
+            width: 100%;
+            height: 100%;
+        }
+        canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+        }
+        #passcode-display {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        #title {
+            font-size: 28px; /* Adjust size as needed */
+            font-weight: bold;
+            margin-bottom: 10px; /* Space between title and webcam */
+        }
+    </style>
+</head>
+<body>
+    <div id="title">Gesture-Based Password Input</div>
+    <div id="webcam-container">
+        <video autoplay></video>
+        <canvas id="overlay"></canvas> <!-- Overlay canvas for landmarks -->
+    </div>
+    <div id="passcode-display">Passcode: </div>
+    <script src="script.js"></script>
+</body>
+</html>
