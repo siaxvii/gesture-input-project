@@ -1,4 +1,4 @@
-# Hand Gesture-based Passcode Input
+## Hand Gesture-based Passcode Input
 
 This mini-project is a real-time hand gesture-based input technique built using the MediaPipe Hands package. The system allows users to input a passcode by performing specific hand gestures detected via a webcam. 
 
@@ -49,5 +49,5 @@ This mini-project is a real-time hand gesture-based input technique built using 
 - **Delete**: 
   - Perform a thumbs-down gesture to delete the last entered character.
 
-### Notes:
+## Notes:
 - Passcodes are limited to 6 characters. Once 6 characters are entered, the passcode is logged, and the system resets after 3 seconds.
