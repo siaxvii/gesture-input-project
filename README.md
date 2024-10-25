@@ -6,7 +6,7 @@ This mini-project is a real-time hand gesture-based input technique built using 
 - **Hand Gesture Recognition**: Uses the webcam to detect hand gestures in real-time.
 - **Shift Mode (Caps Lock)**: Activate shift mode (capital letters) by detecting both hands.
 - **Passcode Input**: Input letters based on finger gestures for entering a passcode.
-- **Delete Gesture**: Perform a thumbs-down gesture to delete the last entered character.
+- **Delete Gesture**: Perform a thumbs-down gesture with left hand to delete the last entered character.
 - **Real-time Visualization**: The hand landmarks and gestures are visualized in real-time on the screen.
 - **Character Display**: The passcode input is displayed as characters are appended, and deleted when necessary.
 
@@ -47,7 +47,7 @@ This mini-project is a real-time hand gesture-based input technique built using 
   - **F**: Extend the index and pinky finger (horns up! 🤘).
   
 - **Delete**: 
-  - Perform a thumbs-down gesture to delete the last entered character.
+  - Perform a thumbs-down gesture with left hand to delete the last entered character.
 
 ## Notes:
 - Passcodes are limited to 6 characters. Once 6 characters are entered, the passcode is logged, and the system resets after 3 seconds.
